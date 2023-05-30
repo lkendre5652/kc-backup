@@ -1,0 +1,24 @@
+
+<!-- breadcrumb  -->
+<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
+<script>
+  jQuery(document).ready(function(){
+    jQuery(".breadcrub-links").click(function(){      
+      jQuery(this).next().find('.inactive').removeClass('inactive');
+    })
+  });
+</script>
+<!-- breadcrumb  -->
+
+
+<style>
+  .hide{
+    display: none;
+  }
+  .inactive{
+    display: none;
+  }
+  .breadcrub-links{
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,37 @@
+
+// breadcrumb
+// function get_breadcrumb() {
+//     global $post, $wp_query;
+//      $page_title = $wp_query->post->post_title; 
+//     echo '<a  href="'.home_url().'" rel="nofollow">Home </a> <span class="breadcrub-links">+</span> '.$page_title;
+//     if (is_category() || is_single()) {
+//         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+//         the_category(' &bull; ');
+//             if (is_single()) {
+//                 echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+//                 the_title();
+//             }
+//     } elseif (is_page()) {
+//         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+//         $pages = get_pages(); 
+//         echo "<ul>";
+//         foreach ($pages as $page_data) {
+//             if($page_data->post_title == $page_title){
+//               continue;
+//             }
+//             $content = apply_filters('the_content', $page_data->post_content);            
+//             echo '<li class="inactive"> <a  href="'.home_url().'/'.strtolower($page_data->post_title).'" rel="nofollow">'.$page_data->post_title."</a></li>"; 
+            
+            
+//         }
+//         echo "</ul>";
+
+//         // echo the_title();
+//     } elseif (is_search()) {
+//         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+//         echo '"<em>';
+//         echo the_search_query();
+//         echo '</em>"';
+//     }
+// }
+// breadcrumb
